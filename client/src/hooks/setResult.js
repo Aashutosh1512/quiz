@@ -26,7 +26,7 @@ export const usePublishResult = (resultData) => {
     (async () => {
         try {
             if(result !== [] && !username) throw new Error("Couldn't get Result");
-            await postServerData(`${process.env.REACT_APP_SERVER_HOSTNAME}/api/result`, resultData, data => data)
+            await postServerData(`http://localhost:8000/api/result`, resultData, data => data)
         } catch (error) {
             console.log(error)
         }

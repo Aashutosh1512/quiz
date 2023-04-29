@@ -21,7 +21,7 @@ import * as Action from '../redux/queston_reducer';
                 
                 //let question=await data;
                 //
-            const [{questions,answers}]=    await getServerData(`${process.env.REACT_APP_SERVER_HOSTNAME}/api/questions`,(data)=>data);
+            const [{questions,answers}]=    await getServerData(`http://localhost:8000/api/questions`,(data)=>data);
            console.log({questions,answers});
               
                  if (questions.length>0){
