@@ -6,7 +6,7 @@ import router from './router/route.js';
 import path from 'path'
 import connect from './database/conn.js';
 import { fileURLToPath } from 'url';
-import path from 'path';
+
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
